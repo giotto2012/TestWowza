@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SQW-Rc-7rH">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="YyR-cQ-sYr">
+            <objects>
+                <viewController id="SQW-Rc-7rH" customClass="ViewController" customModule="TestWowza" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Q0Q-Ge-IdL"/>
+                        <viewControllerLayoutGuide type="bottom" id="cvL-r7-wbo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Y0v-uC-MZP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S5t-p7-XId">
+                                <rect key="frame" x="150" y="572" width="75" height="75"/>
+                                <color key="backgroundColor" red="1" green="0.2316688429" blue="0.1067158706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="a5I-Mo-4zC"/>
+                                    <constraint firstAttribute="width" constant="75" id="qVE-fe-pfV"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="didTapBroadcastButton:" destination="SQW-Rc-7rH" eventType="touchUpInside" id="I8h-5n-a2u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kon-i5-qXE">
+                                <rect key="frame" x="322" y="587" width="37" height="45"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="gGZ-ih-PbD"/>
+                                </constraints>
+                                <state key="normal" title="設定"/>
+                            </button>
+                            <button opaque="NO" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P4r-ar-MF4" userLabel="Switch Camera Button">
+                                <rect key="frame" x="21" y="587" width="37" height="45"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Kfv-wP-Vin"/>
+                                </constraints>
+                                <state key="normal" title="切換"/>
+                            </button>
+                            <button opaque="NO" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVH-aP-S9s" userLabel="Torch Button">
+                                <rect key="frame" x="17" y="35" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="45" id="2gC-Cp-LqM"/>
+                                    <constraint firstAttribute="height" constant="45" id="DLf-a9-W38"/>
+                                </constraints>
+                                <state key="normal" title="閃光"/>
+                                <connections>
+                                    <action selector="didTapTorchButton:" destination="SQW-Rc-7rH" eventType="touchUpInside" id="tvd-3N-wx6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="svP-wp-Dnj" userLabel="Mic Button">
+                                <rect key="frame" x="62" y="35" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="45" id="XYl-zI-y4j"/>
+                                    <constraint firstAttribute="height" constant="45" id="o6H-KQ-hhQ"/>
+                                </constraints>
+                                <state key="normal" title="MIC"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.36470588240000001" green="0.37647058820000001" blue="0.38431372549999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Kon-i5-qXE" firstAttribute="centerY" secondItem="S5t-p7-XId" secondAttribute="centerY" id="26n-AP-Jms"/>
+                            <constraint firstItem="Kon-i5-qXE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Y0v-uC-MZP" secondAttribute="leadingMargin" id="6K3-Eb-YDs"/>
+                            <constraint firstItem="kVH-aP-S9s" firstAttribute="centerX" secondItem="P4r-ar-MF4" secondAttribute="centerX" id="7H7-l3-ycw"/>
+                            <constraint firstItem="P4r-ar-MF4" firstAttribute="centerY" secondItem="S5t-p7-XId" secondAttribute="centerY" id="Bl1-rd-ao5"/>
+                            <constraint firstItem="svP-wp-Dnj" firstAttribute="centerY" secondItem="kVH-aP-S9s" secondAttribute="centerY" id="Bol-47-jTm"/>
+                            <constraint firstItem="kVH-aP-S9s" firstAttribute="top" secondItem="Q0Q-Ge-IdL" secondAttribute="bottom" constant="15" id="Nwi-Ys-mmE"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="P4r-ar-MF4" secondAttribute="leading" constant="-5" id="PPi-q0-0vF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Kon-i5-qXE" secondAttribute="trailing" id="PoX-3X-GmJ"/>
+                            <constraint firstItem="svP-wp-Dnj" firstAttribute="leading" secondItem="kVH-aP-S9s" secondAttribute="trailing" id="ScO-uF-X1j"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="svP-wp-Dnj" secondAttribute="trailing" constant="20" symbolic="YES" id="ZhR-I6-Zot"/>
+                            <constraint firstItem="S5t-p7-XId" firstAttribute="centerX" secondItem="Y0v-uC-MZP" secondAttribute="centerX" id="n8l-Yv-fPq"/>
+                            <constraint firstItem="cvL-r7-wbo" firstAttribute="top" secondItem="S5t-p7-XId" secondAttribute="bottom" constant="20" id="pIT-NY-WM9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cOh-Hu-Xml"/>
+                    </view>
+                    <connections>
+                        <outlet property="broadcastButton" destination="S5t-p7-XId" id="Jx5-Tl-w9A"/>
+                        <outlet property="micButton" destination="svP-wp-Dnj" id="UWj-Bq-fOM"/>
+                        <outlet property="settingsButton" destination="Kon-i5-qXE" id="sdN-LZ-EGb"/>
+                        <outlet property="switchCameraButton" destination="P4r-ar-MF4" id="sUn-lo-YBu"/>
+                        <outlet property="torchButton" destination="kVH-aP-S9s" id="1yC-pN-0pu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6z1-te-7I1" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="449" y="583"/>
+        </scene>
+        <!--Player View Controller-->
+        <scene sceneID="E0D-FB-os8">
+            <objects>
+                <viewController id="811-8l-mN3" customClass="PlayerViewController" customModule="TestWowza" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SxR-fL-byC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="rhf-L1-qFl"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ujo-7S-DSE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="457" y="1283"/>
+        </scene>
+    </scenes>
+</document>
